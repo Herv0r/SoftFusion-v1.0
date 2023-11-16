@@ -27,9 +27,19 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import andina from "./projects/andina.png";
+import travellive from "./projects/travellive.png";
+import ragnar from "./projects/ragnar.png";
+
+import lucas from "./team/lucas.jpg";
+import emir from "./team/emir.jpeg";
+import alvaro from "./team/alvaro.png";
+import benja from "./team/benja.jpg";
+import brito from "./team/brito.png";
+import rafa from "./team/rafa.png";
+
+import android from "./android.jpeg";
+import estrella from "./estrella.svg";
 
 export {
   logo,
@@ -58,7 +68,15 @@ export {
   shopify,
   starbucks,
   tesla,
-  carrent,
-  jobit,
-  tripguide,
+  andina,
+  travellive,
+  ragnar,
+  lucas, 
+  emir,
+  alvaro,
+  benja,
+  brito,
+  rafa,
+  android,
+  estrella,
 };

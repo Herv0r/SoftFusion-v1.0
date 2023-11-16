@@ -19,9 +19,9 @@ import {
   starbucks,
   tesla,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
+  andina,
+  travellive,
+  ragnar,
   threejs,
 } from "../assets";
 
@@ -37,6 +37,10 @@ export const navLinks = [
   {
     id: "work",
     title: "Experiencia",
+  },
+  {
+    id: "team",
+    title: "Equipo",
   },
   {
     id: "contact",
@@ -202,9 +206,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Andina",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Nuestra fábrica es un crisol de maestría y precisión, donde cada grano de azúcar es cuidadosamente creado para ofrecer la máxima calidad y sabor. ",
     tags: [
       {
         name: "react",
@@ -219,41 +223,20 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: andina,
+    source_code_link: "https://azucar-andina.netlify.app/",
   },
   {
-    name: "Job IT",
+    name: "Travellive",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Página oficial de Turismo y Hoteleria diseñada para ayudar a los viajeros a explorar diferentes destinos alrededor del mundo.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
+        name: "tailwindcss",
         color: "green-text-gradient",
       },
       {
@@ -261,8 +244,29 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: travellive,
+    source_code_link: "https://travelliveofficial.netlify.app/",
+  },
+  {
+    name: "Ragnar",
+    description:
+      "Nuestra revolucionaria sala fitness tiene todo el equipamiento que necesitas para hacer deporte de una manera variada y sobre todo, efectiva.",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: ragnar,
+    source_code_link: "https://ragnar-gym.netlify.app/",
   },
 ];
 
