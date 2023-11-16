@@ -13,7 +13,7 @@ const people = [
   },
   {
     name: 'Emir Segovia',
-    role: 'FullStack Developer / QA',
+    role: 'FullStack Developer / QA Automation',
     imageUrl: emir,
   },
   {
