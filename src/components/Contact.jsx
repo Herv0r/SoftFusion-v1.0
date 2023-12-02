@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import Swal from 'sweetalert2'
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
@@ -30,6 +31,16 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
+    Swal.fire({
+      title: "Pronto estará disponible esta función, comunícate por WhatsApp",
+      showCancelButton: false,
+      confirmButtonText: "OK",
+      allowOutsideClick: false,
+      didClose: () => {
+        window.location.href = "https://api.whatsapp.com/send?phone=3863531891";
+      }
+    });
+    return;
 
     emailjs
       .send(
