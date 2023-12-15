@@ -180,26 +180,26 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "Pensaba que era imposible hacer un sitio web tan bonito como nuestro producto, pero SoftFusion me ha demostrado lo contrario",    
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
+      "La verdad, pensaba que armar un sitio web tan lindo como nuestro producto era imposible, pero con SoftFusion me demostraron que no hay imposibles. Estoy chocha con el resultado.",    
+    name: "Ana Rodríguez",
+    designation: "CEO",
+    company: "Onirico",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
     testimonial:
-      "Nunca he conocido a una empresa que se preocupe de verdad por el éxito de sus clientes como lo hace SoftFusion",  
-    name: "Chris Brown",
-    designation: "COO",
+      "Mirá, en mi vida me crucé con pocas empresas que se preocupen posta por el éxito de sus clientes, y te juro que SoftFusion es una de ellas. Están siempre al pie del cañón, ¡un lujo!",  
+    name: "Martín González",
+    designation: "Gerente",
     company: "DEF Corp",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
     testimonial:
-      "Después de que SoftFusion optimizara nuestro sitio web, nuestro tráfico aumentó un 50%. No tenemos palabras para agradecérselo",    
-    name: "Lisa Wang",
+      "Después de que SoftFusion le dio una manito mágica a nuestro sitio web, el tráfico se disparó un 50%. Ni te imaginás lo agradecidos que estamos. Estos pibes son unos genios, de verdad.",    
+    name: "Sandra Vazquez",
     designation: "CTO",
-    company: "456 Enterprises",
+    company: "Pink Enterprises",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
