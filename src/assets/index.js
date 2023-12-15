@@ -37,6 +37,7 @@ import alvaro from "./team/alvaro.png";
 import benja from "./team/benja.jpg";
 import brito from "./team/brito.png";
 import rafa from "./team/rafa.png";
+import roberto from "./team/roberto.jpg";
 
 import android from "./android.jpeg";
 import estrella from "./estrella.svg";
@@ -77,6 +78,7 @@ export {
   benja,
   brito,
   rafa,
+  roberto,
   android,
   estrella,
 };

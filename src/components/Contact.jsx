@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+
 import Swal from 'sweetalert2'
 
 import { styles } from "../styles";
@@ -28,6 +29,7 @@ const Contact = () => {
     });
   };
 
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
@@ -46,7 +48,7 @@ const Contact = () => {
     ).then(
       () => {
         setLoading(false);
-        alert("Gracias. Te contactaré lo antes posible.");
+        alert("Gracias. Te contactaremos lo antes posible.");
   
         setForm({
           name: "",
@@ -89,6 +91,7 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="¿Cuál es tu nombre?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              required
             />
           </label>
           <label className='flex flex-col'>
@@ -100,6 +103,7 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="¿Cual es tu dirección de correo?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              required
             />
           </label>
           <label className='flex flex-col'>
@@ -111,6 +115,8 @@ const Contact = () => {
               onChange={handleChange}
               placeholder='¿Qué quieres decirnos?'
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              style={{ maxHeight: '400px', resize: 'none' }}
+              required
             />
           </label>
 

@@ -86,12 +86,18 @@ const Navbar = () => {
         
         {/* User */}
         <div className="flex items-center gap-4">
-          <img
+          <div className="cursor-pointer hidden md:block mr-10 lg:mr-20">
+              <li className="list-none">
+                <a href="#" className="hover:text-[#FF006C] ease-in-out duration-300">Proximamente...</a>
+              </li>
+          </div>
+
+          {/* <img
             src={user}
             alt="user"
             className="h-10 cursor-pointer hidden md:block mr-10 lg:mr-24"
             onClick={handleChangeTheme}
-          />
+          /> */}
 
           {/* Hamburguer */}
           <img

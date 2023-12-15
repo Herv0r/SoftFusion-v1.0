@@ -1,9 +1,14 @@
-import { lucas, emir, alvaro, benja, brito, rafa } from "../assets"
+import { lucas, emir, alvaro, benja, brito, rafa, roberto } from "../assets"
 
 const people = [
   {
+    name: 'Roberto Elias',
+    role: 'Founder / Systems Engineer',
+    imageUrl: roberto,
+  },
+  {
     name: 'Benjamin Orellana',
-    role: 'Co-Founder / CEO',
+    role: 'Founder / CEO',
     imageUrl: benja,
   },
   {
