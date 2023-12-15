@@ -9,7 +9,7 @@ import Typewriter from "typewriter-effect";
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-screen mx-auto bg-stars-bg bg-no-repeat bg-cover bg-fixed" id="home">
+    <section className="relative w-5/6 h-screen mx-auto bg-stars-bg bg-no-repeat bg-cover bg-fixed" id="home">
      
       <div className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-col lg:flex-row items-center gap-5`}>
         <div className="w-full lg:w-1/2">
@@ -29,7 +29,7 @@ const Hero = () => {
           </p>
         </div>
 
-        <div className="w-[200px] lg:w-[400px] h-cover mx-auto">
+        <div className="w-[200px] lg:w-[400px] h-cover  ml-auto">
             <img
               src={Logo3d}
               alt="LogoRosa"
