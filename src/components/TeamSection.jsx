@@ -42,7 +42,7 @@ const people = [
 
 export default function Team() {
   return (
-    <div className="bg-primary py-24 sm:py-32" id="team">
+    <div className="bg-primary max-sm:px-6 py-24 sm:py-32" id="team">
       <div className="w-full sm:px-16 mx-auto flex flex-col max-lg:grid max-w-7xl gap-x-8 gap-y-20 xl:grid-cols-3">
         <div className="max-w-2xl">
           <h2 className={`${styles.sectionHeadText}`}>Nuestro equipo.</h2>
