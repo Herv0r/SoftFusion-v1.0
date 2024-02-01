@@ -53,7 +53,7 @@ const Navbar = () => {
         scrolled ? "bg-primary" : "bg-transparent"
       }`}
     >
-      <div className="w-full flex justify-between items-center max-w-full">
+      <div className="w-full flex max-md:px-10 max-md:justify-between md:justify-between md:px-10 lg:px-0 lg:justify-around items-center ">
         <Link
           to="/"
           className="flex items-center gap-2"
@@ -66,12 +66,12 @@ const Navbar = () => {
           <img
             src={Logotipo}
             alt="logo"
-            className="w-[250px] md:w-[150px] lg:w-[200px] object-contain ml-10"
+            className="w-[150px] md:w-[150px] lg:w-[200px] object-contain"
           />
         </Link>
 
         {/* Navbar */}
-        <ul className="lg:mx-auto list-none hidden md:flex flex-row gap-8 lg:gap-10 ">
+        <ul className="list-none hidden md:flex gap-8 lg:gap-10">
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -86,8 +86,8 @@ const Navbar = () => {
         </ul>
         
         {/* User */}
-        <div className="flex items-center gap-4">
-          <div className="cursor-pointer hidden lg:block mr-10 lg:mr-20">
+        <div className="items-center gap-4 hidden lg:block ">
+          <div className="cursor-pointer">
               <li className="list-none">
                 <a href="#" className="hover:text-[#FF006C] ease-in-out duration-300">Proximamente...</a>
               </li>
@@ -100,11 +100,14 @@ const Navbar = () => {
             onClick={handleChangeTheme}
           /> */}
 
+        </div>
+
+        <div className="block md:hidden">
           {/* Hamburguer */}
           <img
             src={toggle ? close : menu}
             alt="menu"
-            className="w-[28px] h-[28px] object-contain block md:hidden mr-10"
+            className="w-[28px] h-[28px] object-contain"
             onClick={() => setToggle(!toggle)}
           />
         </div>

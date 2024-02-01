@@ -74,10 +74,10 @@ i::before {
     perspective(250px)
     translateY(-5%)
     translateZ(100);
+}
 
-  img {
-    opacity: 0;
-  }
+#cards:hover img{
+  opacity: 0;
 }
 
 #cards img{
