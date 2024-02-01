@@ -1,5 +1,6 @@
 import React from "react";
 import { logo } from '../assets'
+import Logotipo from "../../public/Logotipo.svg";
 
 const Footer = () => {
   return (
@@ -12,7 +13,7 @@ const Footer = () => {
               <div className="mb-10 w-full">
                 <a href="/#" className="mb-6 block max-w-[160px]">
                 <img
-                    src={logo}
+                    src={Logotipo}
                     alt="logo"
                     className="max-w-full"
                 />

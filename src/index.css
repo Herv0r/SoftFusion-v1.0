@@ -4,6 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 * {
   margin: 0;
   padding: 0;
@@ -13,18 +14,8 @@
   color-scheme: dark;
 }
 
-/* body {
-  background-image: url('assets/stars.svg');
-  background-position: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-} */
 
-@keyframes neon-glow {
-
-}
-
-/* Aplica la animación a la clase que tiene el fondo que deseas animar */
+/* Animación de la barra rosa del navbar*/
 i {
   position: absolute;
   left: 0;  
@@ -33,6 +24,7 @@ i {
   height: 5px;
   background: #fff;
   overflow: hidden;
+  animation: fadeIn 2s ease;
 }
 
 i::before {
@@ -40,21 +32,113 @@ i::before {
   position: absolute;
   width: 100%;
   height: 5px;
-  background: linear-gradient(90deg, #FF006C, #89053c, #050816, #89053c, #FF006C);
-  /* background: linear-gradient(90deg, #FF006C, #ab1c57, #050816, #ab1c57, #FF006C); */
-  /* animation: animate 10s linear infinite; */
+  animation: animate 10s linear infinite;
+  background: linear-gradient(90deg, #050816, #89053c, #050816, #89053c, #050816);
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 @keyframes animate {
-  0%
-  {
-    background-position-x: 0px;
+  from {
+    background-position: 200% 0;
   }
-  100%
-  {
-    background-position-x: 1350px;
+  to {
+    background-position: -200% 0;
   }
 }
+
+/* Efecto de las cards (About Component)*/
+#cards {
+  transition: all .3s ease;
+}
+
+#cards:hover {
+  transform: 
+    perspective(250px)
+    translateY(-5%)
+    translateZ(100);
+
+  img {
+    opacity: 0;
+  }
+}
+
+#cards img{
+  opacity: 1;
+  transition: all .3s ease;
+}
+
+#cards::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  transition: all .3s ease;
+}
+#cards:hover::before{
+  opacity: 1;
+}
+
+#cards p {
+  position: absolute;
+  opacity: 0;
+  padding: 0px 15px;
+}
+#cards:hover p{
+  opacity: 1;
+  transition: all .2s ease;
+  transform: translateY(15%);
+
+}
+
+#cards h3 {
+  transition: all .2s ease;
+  transform: translateY(0%);
+}
+#cards:hover h3{
+  transition: all .2s ease;
+  transform: translateY(-230%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .hash-span {
   margin-top: -100px;

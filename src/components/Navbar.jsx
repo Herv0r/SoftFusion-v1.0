@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close, user } from "../assets";
+import Logotipo from "../../public/Logotipo.svg";
 import "../index.css";
 
 const Navbar = () => {
@@ -63,9 +64,9 @@ const Navbar = () => {
         >
           {/* Logo */}
           <img
-            src={logo}
+            src={Logotipo}
             alt="logo"
-            className="w-[250px] md:w-[150px] lg:w-[250px] object-contain ml-10"
+            className="w-[250px] md:w-[150px] lg:w-[200px] object-contain ml-10"
           />
         </Link>
 
@@ -86,7 +87,7 @@ const Navbar = () => {
         
         {/* User */}
         <div className="flex items-center gap-4">
-          <div className="cursor-pointer hidden md:block mr-10 lg:mr-20">
+          <div className="cursor-pointer hidden lg:block mr-10 lg:mr-20">
               <li className="list-none">
                 <a href="#" className="hover:text-[#FF006C] ease-in-out duration-300">Proximamente...</a>
               </li>
@@ -132,6 +133,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
+      <i className={`${scrolled ? "block" : "hidden"}`}></i>
     </nav>
   );
 };

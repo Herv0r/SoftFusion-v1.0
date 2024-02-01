@@ -51,21 +51,26 @@ export const navLinks = [
 const services = [
   {
     title: "Asesoramiento Estratégico",
+    description: "Recibe orientación experta para desarrollar estrategias efectivas que impulsen el éxito de tu negocio.",
     icon: web,
   },
   {
     title: "Desarrollo de Sistemas",
+    description: "Crea soluciones tecnológicas innovadoras y eficientes con nuestro equipo de desarrolladores de sistemas.",
     icon: mobile,
   },
   {
     title: "Capacitación en Ventas",
+    description: "Potencia tus habilidades de ventas con nuestro programa de capacitación especializado.",
     icon: backend,
   },
   {
     title: "Crecimiento Sostenible",
+    description: "Fomenta un crecimiento empresarial sólido y sostenible con nuestras soluciones integrales.",
     icon: creator,
   },
 ];
+
 
 const technologies = [
   {
